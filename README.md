@@ -31,4 +31,4 @@ Slide Potentiometers
 
 ![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/de2e4b4e-a9d4-4112-870d-b75683920ab5)
 
-Key switch matrix
+Key switch matrix(make sure that the ```"diode_direction"``` in the [info.json](QMK Firmware/info.json))
