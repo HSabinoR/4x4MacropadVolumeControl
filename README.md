@@ -84,3 +84,5 @@ If you've downloaded QMK [Firmware](https://msys.qmk.fm/) correctly, this guide 
 4. Go to the assignments tab and assign each group to an application/device
 
 ![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/d4f0b983-a098-4b1a-b3af-708bef627e8b)
+
+## If you have any issues, let me know
