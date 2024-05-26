@@ -1,4 +1,4 @@
-# 4x4MacropadVolumeControl
+# 4x4 Macropad with Volume Control
 ![20240526_190812](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/03e00508-714e-4bec-bbf8-cf4997fa3ee3)
 A macropad with a 4x4 key switch matrix and 5 slide potentiometer used for volume control. I copied the general design of the MisteRdeck stream deck and turned it in to a 4x4 key switch matrix and added space for an extra slide potentiometer. Aswell as changing the design, i used QMK firmware instead of making my own arduino sketch.
 
