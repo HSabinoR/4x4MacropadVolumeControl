@@ -1,0 +1,3 @@
+MIDI_ENABLE = yes
+ANALOG_DRIVER_REQUIRED = yes
+SRC += analog.c
