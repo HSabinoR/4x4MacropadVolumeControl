@@ -52,6 +52,7 @@ as the pins labelled in the diagrams weren't the exact pins I used.
 - I suggest you use heatshrink tubing, if you have any, to be extra sure that the exposed wires don't touch each other. I didn't use any cause i didn't have any on hand.
 - You don't have to spraypaint the case like I did, i just wanted to.
 - You can either buy some keycaps or 3D print some. There are plenty of stl files online.
+- The [case](STL%20Files/Box.stl) has 3 holes in it as I made an extra bracket to hold a USB hub i had. You can just bring it into any CAD/3D modelling software to patch it.
 
 ## QMK Guide
 If you've downloaded QMK [Firmware](https://msys.qmk.fm/) correctly, this guide should work.
