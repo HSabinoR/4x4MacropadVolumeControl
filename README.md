@@ -61,7 +61,7 @@ If you've downloaded QMK [Firmware](https://msys.qmk.fm/) correctly, this guide 
 3.  Once ```qmk setup``` is done, run ```cd qmk_firmware/``` to move to the main folder of anything to do with QMK
 4.  Run ```qmk new-keyboard -kb keyboardname -u GitHubName -n YourName -l ortho_4x4 -t promicro```. You can replace ```keyboardname```, ```GithubName``` and ```YourName``` with what you want.
 5.  Now locate the folder that the previous command created and replace each file in the folder with the ones in the [QMK Firmware](QMK%20Firmware) folder. You can (Make sure to change the pins to the correct ones)
-6.  Now you can run ```qmk compile -kb keyboardname -km HexFileName``` to create a hex file.
+6.  Now you can run ```qmk compile -kb <keyboard> -km <keymap>``` to create a hex file.
 
 7.  Open QMK [toolbox](https://github.com/qmk/qmk_toolbox/releases/tag/beta)
 8.  Select the hex file, connect the pro micro to the pc, press the reset button two times and press flash.
