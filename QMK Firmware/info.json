@@ -1,6 +1,6 @@
 {
     "manufacturer": "Henrique Sabino",
-    "keyboard_name": "macropad",
+    "keyboard_name": "Macropad",
     "maintainer": "HSabinoR",
     "bootloader": "caterina",
     "diode_direction": "ROW2COL",
@@ -17,11 +17,11 @@
         "rows": ["B2", "B5", "B4", "E6"]
     },
     "processor": "atmega32u4",
-    "url": "",
+    "url": "https://github.com/HSabinoR/4x4MacropadVolumeControl",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
+        "pid": "0x4D50",
+        "vid": "0x4853"
     },
     "layouts": {
         "LAYOUT_4x4": {
