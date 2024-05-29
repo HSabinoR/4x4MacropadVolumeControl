@@ -88,7 +88,7 @@ If you've downloaded QMK [Firmware](https://msys.qmk.fm/) correctly, this guide 
 
 ![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/d4f0b983-a098-4b1a-b3af-708bef627e8b)
 
-5. Go to the button tab and assign it to 'Set default outputdevice...'
+5. Go to the button tab and assign it to 'Set default outputdevice...' and choose what devices you want to alternate between.
 
 ![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/d553db63-204a-4b45-8d48-bf63c93ed9c7)
 
