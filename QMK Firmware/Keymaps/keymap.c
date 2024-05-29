@@ -5,13 +5,20 @@
 #include "analog.h"
 #include "qmk_midi.h"
 
+#define MIDI_CC_OFF 0
+#define MIDI_CC_ON 127
+
+enum custom_keycodes {
+    changeDevice = SAFE_RANGE
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     
     [0] = LAYOUT_4x4(
-        C(S(KC_M)),   C(S(KC_D)),   LWIN(KC_4),   LWIN(KC_7),
-        KC_MEDIA_PREV_TRACK,   KC_MEDIA_PLAY_PAUSE,   KC_MEDIA_NEXT_TRACK,   KC_MEDIA_STOP,
-        LWIN(KC_3),   LWIN(KC_5),   LWIN(KC_6),  KC_AUDIO_MUTE,
-        LWIN(KC_L),   A(KC_F4), KC_F15, TO(1)
+        C(S(KC_M)), C(S(KC_D)), changeDevice, LWIN(KC_4),
+        KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_MEDIA_STOP,
+        LWIN(KC_3), LWIN(KC_5), LWIN(KC_6), KC_AUDIO_MUTE,
+        LWIN(KC_L), A(KC_F4), KC_SLEP, TO(1)
     ),
     [1] = LAYOUT_4x4(
         S(KC_F13), S(KC_F14), S(KC_F15), S(KC_F16),
@@ -20,6 +27,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         C(S(KC_F13)), C(S(KC_F14)), C(S(KC_F15)), TO(0)
         )
 };
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case changeDevice:
+            if (record->event.pressed) {
+                midi_send_cc(&midi_device, 3, 80, MIDI_CC_ON);
+            } else {
+                midi_send_cc(&midi_device, 3, 80, MIDI_CC_OFF);
+            }
+        break;
+    }
+    return true;
+}
 
 uint8_t last_readA = 0;
 uint8_t current_readA = 0;
