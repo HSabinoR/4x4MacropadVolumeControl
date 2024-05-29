@@ -70,13 +70,15 @@ If you've downloaded QMK [Firmware](https://msys.qmk.fm/) correctly, this guide 
  If it looks something like this, you've done it correctly.
 
 ## Midi-Mixer Guide
-1. Create a new profile, go to the controls tab and add 5 faders.
+1. Create a new profile, go to the controls tab and add 5 faders and 1 button.
 
-![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/4b812d09-32a9-4a28-b339-890fe58a09bd)
+![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/8cf7faa1-6b40-418b-976c-123a1e131a8e)
 
-2. For each fader, press the learn control button while moving the respective slide potentiometer up and down.
+2. For each fader and button, press the learn control button while moving the respective slide potentiometer up and down or pressing down on the button.
 
 ![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/5896ddfe-4b6f-4a4e-a2df-d42532a67b11)
+![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/47e4ff79-974e-4c54-96cb-c17399453c41)
+
 
 3. In the groups tab, create 5 groups and assign 1 fader to each
 
@@ -85,5 +87,10 @@ If you've downloaded QMK [Firmware](https://msys.qmk.fm/) correctly, this guide 
 4. Go to the assignments tab and assign each group to an application/device
 
 ![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/d4f0b983-a098-4b1a-b3af-708bef627e8b)
+
+5. Go to the button tab and assign it to 'Set default outputdevice...'
+
+![image](https://github.com/HSabinoR/4x4MacropadVolumeControl/assets/153095110/d553db63-204a-4b45-8d48-bf63c93ed9c7)
+
 
 ## If you have any issues, let me know
